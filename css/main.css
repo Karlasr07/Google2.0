@@ -1,0 +1,188 @@
+body{
+/*Margen*/
+ margin: 0;
+/*Margen para dentro*/
+padding: 0;
+font-size: 13px;
+font-family: Arial, Helvetica, sans-serif;
+}
+/*NAVEGACION*/
+header{
+    width: 100%;
+    height: 50px;
+}
+header nav{
+/*elementos flexibles*/
+display: flex;
+/* Anclar a la derecha*/
+justify-content: flex-end;
+}
+header nav .nav-right-section{
+width: 250px;
+/* Eliminar biñetas*/
+list-style: none;
+/* Felxibilidad a nuestro componente*/
+display: flex;
+/*Centramos horizontalmente los elementos dentro de la lista*/
+justify-content: center;
+/*Centramos verticalmente la lista*/
+align-items: center;
+}
+/*Elimina linea debajo*/
+a{
+    text-decoration: none;
+}
+
+nav .nav-right-section a{
+    /*Color de texto*/
+    color: rgb(21, 21, 21);
+    /*Margen derecho*/
+    margin-right: 20px;
+}
+nav .nav-right-section .menu {
+    background-image:url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png) ;
+    width: 20px;
+    height: 20px;
+    /*Modifica el tamaño de la imagen al tamaño del contenedor*/
+    background-size: contain;
+    /*Para eliminar la repeticion del elemento*/
+    background-repeat: no-repeat;
+}
+nav .nav-right-section img{
+    /*Redondear bordes*/
+    border-radius: 30px;
+    margin-left: 20px;
+}
+/*Main*/
+main{
+    margin-top: 150px;
+    text-align: center;
+}
+main .main-logo{
+    width: 530px;
+    /*Setea 0 al margen de arriba y abajo-- auto (settea en auto bordes de izquierda a derecha)*/
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+/*Seccion input*/
+main .main-input{ 
+    width: 550px;
+    margin: 0 auto;
+    /*Separacion entre buscador y botones**/
+margin-bottom: 40px;
+}
+/* caja con bordes redondeados*/
+
+main .main-input-container{
+   border: 1px solid #dfe1e5;
+   border-radius: 20px;
+   width: 525px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+/*Cajita de input*/
+main .main-input input{
+    height: 35px;
+    border: none;
+    /*outline borde cuando seleccionas elemento*/
+    outline: none;
+    width: 430px;
+
+}
+
+/**/
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain;
+    padding-left: 10%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 15px;
+}
+main .main-input .micro-icon {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    height: 17px;
+    width: 17px;
+background-size: contain;
+background-position: center;
+padding-left: 1%;
+background-repeat: no-repeat;
+}
+main .main-input .cam-icon {
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+background-position: center;
+background-size: contain;
+width: 17px;
+height: 17px;
+background-repeat: no-repeat;
+padding-right: 5%;
+}
+main .main-buttons{
+    width: 550px;
+    margin: 0 auto;
+
+}
+main .main-buttons div{
+    /*Que esten en la misma linea*/
+    display: inline-block;
+}
+
+main .main-buttons button{
+    background-color: #f8f9fa;
+    border: none;
+    height: 40px;
+    font-size: 16px;
+    color: #3c4043;
+    padding: 0 15px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+/*Efecto de sombra al pasar mouse*/
+main .main-input-container:hover{
+    /*offset-x | offset-y | color*/
+    box-shadow: 0px 0px 5px #3c4043;
+}
+main .main-buttons button:hover{
+    color: #202124;
+    border: 1px solid #dadce0;
+    box-shadow: 0px 1px 1px #20212447;
+}
+footer{
+    background-color: #f2f2f2;
+    width: 100%; /* ancho */
+    height: 100px; /* Alto */
+    position: absolute;
+    font-size: 20px;
+    display: grid; /* se separa en columnas*/
+    grid-template-columns: 1fr 1fr; /* ocupará 2 columnas */
+    align-items: center;
+    border-top: 1px solid #e4e4e4;
+    bottom: 0%;
+}
+ul{
+    list-style: none;
+    display: flex;
+    margin: 20px;
+    padding: 0px;
+
+}
+footer .footer-left li{
+
+    margin-right: 20px;
+    display: flex;
+    align-items: end;
+}
+footer .Lista-2 li{
+   
+    margin-right: 20px;
+    display: flex;
+    justify-content: end;
+}
+footer li a{
+    color: #3c4043;}
+    footer .Lista-2 a{
+        display: flex;
+      justify-content: end;
+    }
